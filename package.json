@@ -1,0 +1,18 @@
+{
+    "name": "com.vasco.digipass",
+    "version": "0.0.1",
+    "description": "Plugin Digipass4Apps",
+    "cordova": {
+      "id": "com.vasco.digipass4apps",
+      "platforms": [
+        "android"
+      ]
+    },
+    "keywords": [
+      "ecosystem:cordova",
+      "cordova-android"
+    ],
+    "author": "Jorge de los Rios",
+    "license": "ISC"
+  }
+  
