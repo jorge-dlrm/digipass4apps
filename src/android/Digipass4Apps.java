@@ -442,7 +442,7 @@ public class Digipass4Apps extends CordovaPlugin {
     try {
       // Initialize a secure storage
       try {
-        secureStorage = SecureStorageSDK.init("mySecureStorage", getStorageFingerprint(), getIterationNumber(),
+        secureStorage = SecureStorageSDK.init("IDC001234rSwgeSoigh8238", getStorageFingerprint(), getIterationNumber(),
             context);
       } catch (SecureStorageSDKException e) {
         e.printStackTrace();
@@ -552,7 +552,7 @@ public class Digipass4Apps extends CordovaPlugin {
     if (secureStorage != null) {
 
       try {
-        secureStorage.delete("mySecureStorage", context);
+        secureStorage.delete("IDC001234rSwgeSoigh8238", context);
       } catch (SecureStorageSDKException e) {
         callbackContext.error("Failed to remove data");
       }
@@ -586,7 +586,7 @@ public class Digipass4Apps extends CordovaPlugin {
    * @see DeviceBindingSDK#getDeviceFingerprint
    */
   private String getStorageFingerprint() {
-    return "1234";
+    return platformFingerprint;
   }
 
 }
